@@ -9,7 +9,7 @@ const messages = {
   prod: "Bonjour de l'environnement de PROD",
 };
 
-const message = messages[ENV] || 'Hello DEV';
+const message = messages[ENV] || 'Hello DEV test';
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
